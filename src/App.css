@@ -1,5 +1,10 @@
 .App {
 	text-align: center;
+	height: 100vh;
+
+	background-image: url(pink-background.jpg);
+	background-size: cover;
+	/* background-repeat: repeat-y; */
 }
 
 .header {
@@ -11,4 +16,9 @@
 	color: white;
 	position: sticky;
 	top: 0;
+	width: 500px;
+}
+
+.header.click {
+	background-color: white;
 }
