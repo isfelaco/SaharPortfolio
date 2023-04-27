@@ -6,18 +6,23 @@ const Menu = styled.div`
 	height: 40px;
 	width: 200px;
 
-	background-color: white;
+	background-color: rgb(221, 213, 222, 0.5);
 	border-radius: 2px;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	// justify-content: center;
+	gap: 10px;
 
 	h2 {
 		margin: 0;
+		color: white;
 	}
 	transition: height 1s;
+`;
+
+const Link = styled(NavLink)`
+	color: white;
 `;
 
 export function NavBar() {
@@ -36,8 +41,12 @@ export function NavBar() {
 	return (
 		<div>
 			<Menu onClick={onOpen} className="collapsible">
-				<h2>Menu</h2>
-				{open && <NavLink to="/page1">Page1</NavLink>}
+				<h2>MENU</h2>
+				{open && (
+					<div>
+						<Link to="/page1">Page1</Link>
+					</div>
+				)}
 			</Menu>
 		</div>
 	);
