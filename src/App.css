@@ -1,3 +1,8 @@
+@font-face {
+	font-family: myFont;
+	src: url(ShadowsIntoLight-Regular.ttf);
+}
+
 .App {
 	text-align: center;
 	height: 100vh;
@@ -5,6 +10,7 @@
 	background-image: url(pink-background.jpg);
 	background-size: cover;
 	/* background-repeat: repeat-y; */
+	font-family: myFont;
 }
 
 .header {
