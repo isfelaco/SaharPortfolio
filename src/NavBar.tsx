@@ -6,8 +6,11 @@ const Menu = styled.div`
 	height: 40px;
 	width: 200px;
 
+	position: relative;
+	top: 50px;
+
 	background-color: rgb(221, 213, 222, 0.5);
-	border-radius: 2px;
+	border-radius: 0px 50px 50px 0px;
 
 	display: flex;
 	flex-direction: column;
@@ -33,21 +36,23 @@ export function NavBar() {
 		setOpen((o) => !o);
 		const menu = document.getElementsByClassName("collapsible")[0];
 		if (menu) {
-			if (!open) (menu as HTMLElement).style.height = "100vh";
+			if (!open) {
+				(menu as HTMLElement).style.height = "calc(100vh - 100px)";
+				(menu as HTMLElement).style.borderRadius = "0px 20px 20px 0px";
+			}
+
 			if (open) (menu as HTMLElement).style.height = "40px";
 		}
 	};
 
 	return (
-		<div>
-			<Menu onClick={onOpen} className="collapsible">
-				<h2>MENU</h2>
-				{open && (
-					<div>
-						<Link to="/page1">Page1</Link>
-					</div>
-				)}
-			</Menu>
-		</div>
+		<Menu onClick={onOpen} className="collapsible">
+			<h2>MENU</h2>
+			{open && (
+				<div>
+					<Link to="/page1">Page1</Link>
+				</div>
+			)}
+		</Menu>
 	);
 }

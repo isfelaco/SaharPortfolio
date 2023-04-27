@@ -1,6 +1,6 @@
 @font-face {
 	font-family: myFont;
-	src: url(ShadowsIntoLight-Regular.ttf);
+	src: url(Pacifico-Regular.ttf);
 }
 
 .App {
@@ -11,20 +11,4 @@
 	background-size: cover;
 	/* background-repeat: repeat-y; */
 	font-family: myFont;
-}
-
-.header {
-	background-color: #282c34;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	color: white;
-	position: sticky;
-	top: 0;
-	width: 500px;
-}
-
-.header.click {
-	background-color: white;
 }
