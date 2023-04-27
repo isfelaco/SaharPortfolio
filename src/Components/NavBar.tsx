@@ -13,10 +13,12 @@ const Menu = styled.div`
 	top: 50px;
 	background-color: rgb(221, 213, 222, 0.5);
 	border-radius: 0px 50px 50px 0px;
+	overflow-y: hidden;
 
 	h2 {
 		margin: 0;
 		color: white;
+		cursor: pointer;
 	}
 	transition: height 1s;
 `;
@@ -48,8 +50,8 @@ export function NavBar() {
 	};
 
 	return (
-		<Menu onClick={onOpen} className="collapsible">
-			<h2>MENU</h2>
+		<Menu className="collapsible">
+			<h2 onClick={onOpen}>MENU</h2>
 			{open && (
 				<Links>
 					<Link to="/">Home</Link>
