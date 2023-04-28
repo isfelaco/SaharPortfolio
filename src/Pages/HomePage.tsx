@@ -1,14 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const Container = styled.div`
-	display: flex;
-	flex-direction: row;
-	height: 100vh;
-	width: 100%;
-	justify-content: center;
-`;
-
 const Title = styled.p`
 	font-size: 100px;
 	color: white;
@@ -32,8 +24,8 @@ const Title = styled.p`
 
 export function HomePage() {
 	return (
-		<Container>
+		<div className="container">
 			<Title>Sahar Asghari</Title>
-		</Container>
+		</div>
 	);
 }

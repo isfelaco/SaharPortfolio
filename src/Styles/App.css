@@ -11,3 +11,13 @@
 	background-size: cover;
 	font-family: myFont;
 }
+
+.container {
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	width: 85%;
+	justify-content: center;
+	position: relative;
+	float: right;
+}
