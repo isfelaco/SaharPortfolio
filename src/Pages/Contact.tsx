@@ -28,6 +28,11 @@ const EmailForm = styled.form`
 		border: 1px solid white;
 		border-radius: 5px;
 	}
+	textarea {
+		height: 100px;
+		max-height: 200px;
+		resize: vertical;
+	}
 `;
 
 const Column = styled.div`
