@@ -1,22 +1,19 @@
+import { Typography, styled, Box } from "@mui/material";
 import React from "react";
-import styled from "styled-components";
 
-const Container = styled.div`
+const Container = styled(Box)`
+	flex-grow: 1;
 	display: flex;
-	flex-direction: row;
-	height: 100vh;
-	width: 100%;
 	justify-content: center;
+	align-items: center;
+
+	background-image: url(pink-background.jpg);
+	background-size: cover;
 `;
 
-const Title = styled.p`
-	font-size: 100px;
+const Title = styled(Typography)`
 	color: white;
 	text-shadow: 2px 3px 0 #aa4586, 1px 3px 0 #aa4586, 1px 3px 0 #aa4586;
-	display: flex;
-	justify-self: center;
-	align-self: center;
-	letter-spacing: 5px;
 	@keyframes growSpacing {
 		0% {
 			letter-spacing: 1px;
@@ -30,10 +27,10 @@ const Title = styled.p`
 	animation: growSpacing 5s;
 `;
 
-export function HomePage() {
+export default function Home() {
 	return (
 		<Container>
-			<Title>Sahar Asghari</Title>
+			<Title variant="h1">Sahar Asghari</Title>
 		</Container>
 	);
 }
