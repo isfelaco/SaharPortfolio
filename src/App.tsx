@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 import { NavBar } from "./components/NavBar";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./theme";
@@ -23,7 +23,7 @@ function App() {
 					width: "100vw",
 				}}
 			>
-				<BrowserRouter>
+				<HashRouter>
 					<NavBar />
 					<Routes>
 						<Route path="/" element={<Home />} />
@@ -31,7 +31,7 @@ function App() {
 							<Route key={key} path={page.path} element={page.element} />
 						))}
 					</Routes>
-				</BrowserRouter>
+				</HashRouter>
 			</Box>
 		</ThemeProvider>
 	);

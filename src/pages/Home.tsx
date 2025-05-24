@@ -7,7 +7,7 @@ const Container = styled(Box)`
 	justify-content: center;
 	align-items: center;
 
-	background-image: url(pink-background.jpg);
+	background-image: url("https://isfelaco.github.io/SaharPortfolio/pink-background.jpg");
 	background-size: cover;
 `;
 
