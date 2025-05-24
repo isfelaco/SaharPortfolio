@@ -6,11 +6,10 @@ import Home from "./pages/Home";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./theme";
 import { Box } from "@mui/material";
+import Contact from "./pages/Contact";
 
 export const pages = {
-	About: { path: "/about", element: <div /> },
-	Projects: { path: "/projects", element: <div /> },
-	Contact: { path: "/contact", element: <div /> },
+	Contact: { path: "/contact", element: <Contact /> },
 };
 
 function App() {
