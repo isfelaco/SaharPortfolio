@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.d1961b7e.css",
-    "main.js": "/static/js/main.165143a1.js",
-    "static/js/787.8dd7bd57.chunk.js": "/static/js/787.8dd7bd57.chunk.js",
-    "static/media/Pacifico-Regular.ttf": "/static/media/Pacifico-Regular.7bdf9e5e21239393db89.ttf",
-    "index.html": "/index.html",
-    "main.d1961b7e.css.map": "/static/css/main.d1961b7e.css.map",
-    "main.165143a1.js.map": "/static/js/main.165143a1.js.map",
-    "787.8dd7bd57.chunk.js.map": "/static/js/787.8dd7bd57.chunk.js.map"
+    "main.css": "/SaharPortfolio/static/css/main.e212116e.css",
+    "main.js": "/SaharPortfolio/static/js/main.fec21290.js",
+    "static/js/787.8dd7bd57.chunk.js": "/SaharPortfolio/static/js/787.8dd7bd57.chunk.js",
+    "static/media/Pacifico-Regular.ttf": "/SaharPortfolio/static/media/Pacifico-Regular.7bdf9e5e21239393db89.ttf",
+    "index.html": "/SaharPortfolio/index.html",
+    "main.e212116e.css.map": "/SaharPortfolio/static/css/main.e212116e.css.map",
+    "main.fec21290.js.map": "/SaharPortfolio/static/js/main.fec21290.js.map",
+    "787.8dd7bd57.chunk.js.map": "/SaharPortfolio/static/js/787.8dd7bd57.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1961b7e.css",
-    "static/js/main.165143a1.js"
+    "static/css/main.e212116e.css",
+    "static/js/main.fec21290.js"
   ]
 }
