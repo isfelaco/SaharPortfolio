@@ -1,21 +1,41 @@
 import React from "react";
-import "./Styles/App.css";
-import { NavBar } from "./Components/NavBar";
+import "./index.css";
+import { NavBar } from "./components/NavBar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { HomePage } from "./Pages/HomePage";
-import { ContactPage } from "./Pages/Contact";
+import Home from "./pages/Home";
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "./theme";
+import { Box } from "@mui/material";
+import Contact from "./pages/Contact";
+
+export const pages = {
+	About: { path: "/about", element: <div /> },
+	Projects: { path: "/projects", element: <div /> },
+	Contact: { path: "/contact", element: <Contact /> },
+};
 
 function App() {
 	return (
-		<div className="App">
-			<BrowserRouter>
-				<NavBar />
-				<Routes>
-					<Route path="/" element={<HomePage />} />
-					<Route path="/contact" element={<ContactPage />} />
-				</Routes>
-			</BrowserRouter>
-		</div>
+		<ThemeProvider theme={theme}>
+			<Box
+				sx={{
+					display: "flex",
+					flexDirection: "column",
+					height: "100vh",
+					width: "100vw",
+				}}
+			>
+				<BrowserRouter>
+					<NavBar />
+					<Routes>
+						<Route path="/" element={<Home />} />
+						{Object.entries(pages).map(([key, page]) => (
+							<Route key={key} path={page.path} element={page.element} />
+						))}
+					</Routes>
+				</BrowserRouter>
+			</Box>
+		</ThemeProvider>
 	);
 }
 

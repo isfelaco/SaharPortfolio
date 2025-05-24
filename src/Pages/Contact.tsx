@@ -55,7 +55,7 @@ const RightColumn = styled(Column)`
 	flex: 40%;
 `;
 
-export function ContactPage() {
+export default function Contact() {
 	emailjs.init(""); // insert public key here
 
 	function sendEmail(e: any) {
