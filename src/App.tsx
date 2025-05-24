@@ -23,7 +23,7 @@ function App() {
 					width: "100vw",
 				}}
 			>
-				<HashRouter>
+				<HashRouter basename="/">
 					<NavBar />
 					<Routes>
 						<Route path="/" element={<Home />} />

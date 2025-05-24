@@ -73,7 +73,7 @@ export function NavBar() {
 						variant="h6"
 						noWrap
 						component="a"
-						href="/"
+						href="/SaharPortfolio/"
 						sx={{
 							mr: 2,
 							color: "inherit",
