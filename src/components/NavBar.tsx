@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styled from "styled-components";
 import { NavLink, useLocation } from "react-router-dom";
 import {
 	AppBar,
