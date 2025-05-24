@@ -1,5 +1,8 @@
 name: Deploy to GitHub Pages
 
+permissions:
+  contents: write # Ensure the token can push changes
+
 on:
   push:
     branches:
