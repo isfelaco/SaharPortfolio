@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 import { Box, Button, FormControl, TextField, Typography } from "@mui/material";
 
 export default function Contact() {
-	emailjs.init("public_key"); // insert public key here
+	emailjs.init(""); // insert public key here
 
 	function sendEmail(e: any) {
 		e.preventDefault();

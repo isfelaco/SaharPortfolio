@@ -2,11 +2,11 @@ import React from "react";
 import "./index.css";
 import { NavBar } from "./components/NavBar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./tempPages/Home";
+import Home from "./pages/Home";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./theme";
 import { Box } from "@mui/material";
-import Contact from "./tempPages/Contact";
+import Contact from "./pages/Contact";
 
 export const pages = {
 	Contact: { path: "/contact", element: <Contact /> },
